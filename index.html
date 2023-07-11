@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Diniz Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Rowdies&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-main">
+            <a href="#about">
+                <div class="logo-container">
+                    <img src="img/logo Alexandre Diniz coder.PNG" alt="AD-logo">
+                </div>
+            </a>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section" id="about">
+            <div class="picture-container"><img src="img/IMG-20190104-WA0301.jpg" alt="Alexandre-picture"></div>
+            <div class="about">
+                <h3>Hello!</h3>
+                <h4>I am Alexandre Diniz da Costa.</h4>
+                <p>I hold a Ph.D. in Computational Linguistics. I have extensive experience in cogntive linguistics,
+                    language modeling, specific domains, frames and constructions, qualia relations and machine
+                    translation.
+                    My expertise is to create Websites, and I intend to improve my dev skills in order to become a Full
+                    Stack Developer.</p>
+                <span class="text first-text"> I am...</span>
+                <span class="text sec-text"> am Alexandre Diniz da Costa</span>
+            </div>
+        </section>
+        <section class="about-skills">
+            <div class="skills-languages-titles">
+                <h2>Skills</h2>
+                <h2>Languages</h2>
+            </div>
+            <div id="skills-container">
+                <div class="skills">
+                    <progress max="100" value="25"></progress>
+                    <p>CSS</p>
+                    <progress max="100" value="45"></progress>
+                    <p>Javascript</p>
+                    <progress max="100" value="85"></progress>
+                    <progress max="100" value="55"></progress>
+                    <progress max="100" value="45"></progress>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="languages">
+                    <div class="flag-level-container">
+                        <img src="https://hatscripts.github.io/circle-flags/flags/br.svg" width="30">
+                        <p>Native</p>
+                    </div>
+                    <progress max="100" value="65"></progress>
+                    <div class="flag-level-container"><img src="https://hatscripts.github.io/circle-flags/flags/us.svg"
+                            width="30">
+                        <p>C1</p>
+                    </div>
+                    <progress max="100" value="75"></progress>
+                    <div class="flag-level-container">
+                        <img src="https://hatscripts.github.io/circle-flags/flags/es.svg" width="30">
+                        <p>A2</p>
+                    </div>
+                    <progress max="100" value="15"></progress>
+                </div>
+                <div class="languages">
+                    <div class="flag-level-container">
+                        <img src="https://hatscripts.github.io/circle-flags/flags/fr.svg" width="30">
+                        <p>A2</p>
+                    </div>
+                    <progress max="100" value="75"></progress>
+                    <div class="flag-level-container">
+                        <img src="https://hatscripts.github.io/circle-flags/flags/it.svg" width="30">
+                        <p>B2</p>
+                    </div>
+                    <progress max="100" value="75"></progress>
+                    <div class="flag-level-container">
+                        <img src="https://hatscripts.github.io/circle-flags/flags/de.svg" width="30">
+                        <p>A2</p>
+                    </div>
+                    <progress max="100" value="75"></progress>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="portfolio">
+                <p>About</p>
+
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact">
+                <p>About</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "a Full Stack Developer.";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "a Web Developer.";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "an English Teacher.";
+            }, 8000);
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>
+</body>
+
+</html>
